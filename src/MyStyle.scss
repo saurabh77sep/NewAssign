@@ -1,0 +1,13 @@
+
+$Position: relative;
+$Top: -11px;
+$textAlign: center;
+$Display: block;
+
+.price1{  
+    position: $Position;
+    top: $Top;
+    text-align: $textAlign;
+    display: $Display;
+
+}
