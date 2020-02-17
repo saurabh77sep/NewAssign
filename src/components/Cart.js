@@ -2,6 +2,7 @@ import React from 'react';
 
 import Sort from '../components/Sort';
 import axios from 'axios';
+import '../MyStyle.scss'; 
 
 
 const aStyle = {
@@ -94,7 +95,7 @@ class Cart extends React.Component {
 
       <React.Fragment>
         <Sort onsortByPriceAsc={this.sortByPriceAsc} onsortByPriceDis={this.sortByPriceDis} onsortByPriceDesc={this.sortByPriceDesc} />
-        <div class="flex-container">
+        <div className="flex-container">
 
           {!isLoading ? (
             users.map(user => {

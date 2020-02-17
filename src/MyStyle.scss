@@ -1,13 +1,157 @@
+$borderRadius: 20px;
+$myColorYellow : yellow;
+$myColorWhite : white;
+$myFlex : flex;
+$myFlexWrap : wrap;
+$paddingApplyBtn : 10px 18px 0px 10px;
+$textAlign : right;
+$textAlignC : center;
+$textAlignL:left;
+$myPosition:relative;
+$myDisplay:block;
+$myJustifyContent:space-between;
+$paddingNavbar : 0.5rem 1rem;
+$navbarBg: #007bff;
+$CompJoinPadding : 8px;
+$myFloatRight : right;
+$myFloatLeft : left;
+$searchCompPaddingRt : 5px;
+$primeSpecBg : #ff7600;
+$primeBorCol : #ff7600;
+$myBgColFlex : #f1f1f1;
+$flexMargin : 10px;
+$flexPadding: 12px;
+$flexFont: 14px;
+$sortOptionListType: none;
+$sortOptionColor: #6b6969;
+$sorftOptionLeft: -22%;
+$labelFont : 13px;
+$labelColor : #736f6f;
+$price1Top : -11px;
+$button5Padding: 10px 35px 10px 35px;
+$optionClassTop: 2px;
+$optionClassRight: 5px;
+$myFontBold : bold;
+$myColorGreen : green;
 
-$Position: relative;
-$Top: -11px;
-$textAlign: center;
-$Display: block;
+.flex-container > div {
+  background-color: $myBgColFlex;
+  margin: $flexMargin;
+  text-align:$textAlign;
+   padding: $flexPadding;
+  font-size: $flexFont;
+}
 
-.price1{  
-    position: $Position;
-    top: $Top;
-    text-align: $textAlign;
-    display: $Display;
+
+
+.optionClass{
+
+  position: $myPosition;
+  top: $optionClassTop;
+  right: $optionClassRight;
+}
+
+.price{
+  float: $myFloatLeft;
+  font-weight: $myFontBold;
+  }
+  .discount{
+    float: $myFloatRight;
+    color: $myColorGreen;
+    font-weight: $myFontBold;
+    }
+
+form{
+  text-align: $textAlignC;
+}
+.right-panel{
+
+    float: $myFloatRight;
 
 }
+
+.sortOption{
+  position: $myPosition;
+  left: $sorftOptionLeft;
+  list-style-type: $sortOptionListType;
+  color: $sortOptionColor;
+    font-size: $flexFont;
+    text-align: $textAlignL;
+}
+
+.button5{
+  background-color: $navbarBg;
+  padding: $button5Padding;
+  color: $myColorWhite;
+}
+
+
+form label{
+  float:$myFloatLeft;  
+  font-size: $labelFont; 
+  color: $labelColor
+}
+
+.price1{  
+  position: $myPosition;
+  top: $price1Top;
+  text-align: $textAlignC;
+  display: $myDisplay;
+
+}
+
+.button4 {border-radius: $borderRadius;}
+
+.button5 {border-radius: $borderRadius;}
+
+ .flex-container {
+  display: $myFlex;
+  flex-wrap: $myFlexWrap;
+}
+.applyButton{
+  padding: $paddingApplyBtn;
+  text-align: $textAlign;
+}
+
+.search-link, .cart-link{
+
+  color: $myColorWhite !important;
+ 
+}
+
+.navbar {
+  position: $myPosition;
+  display:$myDisplay !important;
+  flex-wrap: $myFlexWrap;
+  justify-content: $myJustifyContent;
+  padding: $paddingNavbar;
+  background-color: $navbarBg;
+}
+
+.nav-link{
+  color: $myColorYellow !important;
+}
+
+.CompJoin{
+  padding: $CompJoinPadding;
+  float: $myFloatRight
+}
+
+.searchComp{
+
+  float: $myFloatLeft;
+   margin-right:$searchCompPaddingRt
+}
+
+.searchIconComp{
+
+  float: $myFloatLeft;
+   margin-right: $searchCompPaddingRt
+}
+
+.btn-primarySpec{
+  color:$myColorWhite  !important;
+  background-color: $primeSpecBg !important;
+  border-color: $primeBorCol !important;
+}
+

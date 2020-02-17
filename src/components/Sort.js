@@ -3,7 +3,7 @@ import React from 'react';
 import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-
+import '../MyStyle.scss';
 
 
 const customStyles = {
@@ -162,7 +162,7 @@ class Sort extends React.Component {
                                         <strong>Discount(max. to min.)</strong>
                                     </label>
                                 </li>
-                            </ul> 
+                            </ul><br></br> 
                             <button type="submit" style={{marginTop:"12px"}} class="btn btn-primary submit-button">Apply</button>
 
                         </form>
